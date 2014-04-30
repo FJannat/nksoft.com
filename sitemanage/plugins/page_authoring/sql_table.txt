@@ -1,0 +1,9 @@
+xCREATE TABLE news (
+  id int(11) NOT NULL auto_increment,
+  title varchar(255) NOT NULL default '',
+  body text NOT NULL,
+  user_id int(3) NOT NULL default '0',
+  published_date datetime NOT NULL default '0000-00-00 00:00:00',
+  active enum('y','n') NOT NULL default 'y',
+  PRIMARY KEY  (id)
+) TYPE=MyISAM;

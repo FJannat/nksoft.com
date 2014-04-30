@@ -1,0 +1,56 @@
+#logo img{ /* show print version of logo */
+	display:block;
+	margin-left:30px;
+	}	
+#topnav,
+#head .nav,
+#footer_btm,
+#footer_top .right,
+.control_set_inner,
+.next_button_out,
+.previous_button_out,
+#side_nav,
+#contact_block,
+#perspectives_menus,
+#perspective_search{
+display:none;
+}
+
+#pg_head h2{
+color:#2AA1DD;
+padding-left:0px;
+}
+#main .tab_contents{
+border:none;
+padding:0px;
+
+}
+
+#main ul.tab_nav{
+border:none;
+border-bottom: solid 1px #ccc;
+}
+#main .tab_nav li{
+display:none;
+}
+#main .tab_nav li.selected{
+display:block;
+color:#2AA1DD;
+background-color:transparent;
+background-image:none;
+}
+
+#main .tab_nav li.selected a,
+#main .tab_nav li.selected a:link,
+#main .tab_nav li.selected a:visited,
+#main .tab_nav li.selected a:hover{
+background-image:none;
+color:#2AA1DD;
+background-color:transparent;
+font-size:18px;
+padding:0px;
+}
+#footer_top, #footer_btm{
+border:none;
+
+}

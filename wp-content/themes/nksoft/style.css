@@ -1,0 +1,13 @@
+/*
+Theme Name: Pyratetech Blank Wordpress Theme
+Theme URI: http://www.pyratetech.com
+Description: Pyratetech Blank Theme 
+Version: 1.0
+Author: Jason Robinette
+Author URI: http://www.pyratetech.com
+*/
+
+@import url("base.css");
+@import url("wordpress.css");
+@import url("main.css");
+

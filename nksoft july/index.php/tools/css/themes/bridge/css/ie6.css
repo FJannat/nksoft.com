@@ -1,0 +1,21 @@
+#secondary_nav_wrap,
+#secondary_nav .selected,
+#secondary_nav li.selected a:link,
+#secondary_nav li.selected a:hover,
+#secondary_nav li.selected a:visited{
+	background-image:none;
+	}
+	
+#gs_buttons a:link,
+#gs_buttons a:visited{
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/images/gs_arrow.gif');
+	}
+#gradient{
+	background-image:none;
+	
+	}	
+#banner_controls a{
+background-image:none;
+padding:0px;
+
+}	

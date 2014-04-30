@@ -1,0 +1,85 @@
+﻿/* CSS Document */
+.entry h1 {
+	color: #555555;
+	display: block;
+	font-size:20px;
+	line-height:30px;
+	font-weight:normal;
+	margin: 0px;
+	padding: 0px;
+	width: 610px;
+	background-image:none;
+	height:auto;
+}
+#slide {
+	position:relative;
+	width:640px;
+	height:425px;
+	overflow:hidden;
+	z-index:10;
+	background-image:url(../gfx/bg-h1.png);
+	background-repeat:repeat-y;
+	background-position:0 0;
+	margin-top:101px;
+}
+#slide #imgHolder {
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index:8;
+	visibility:visible; 
+	opacity: 1;
+}
+#slide #imgHolder #hide {
+	overflow:hidden;
+	z-index:10;
+	width:640px;
+	height:425px;
+	position:absolute;
+	left: 0px;
+	top: 0px;
+}
+#slide #show {
+	width:640px;
+	height:425px;
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	z-index:20;
+}
+#slide #show h2, #slide #hide h2 {
+	font-family: "Roboto Condensed";
+	color:#FFF;
+	font-size:45px;
+	padding:30px 30px 20px 30px;
+	text-transform:uppercase;
+}
+#slide #show h3, #slide #hide h3 {
+	font-family: "Roboto Condensed";
+	color:#FFF;
+	font-size:34px;
+	padding:0 30px 20px 30px;
+}
+#slide #show p, #slide #hide p {
+	font-family: "Roboto Condensed";
+	color:#FFF;
+	font-size:20px;
+	padding:0 30px 20px 30px;
+}
+#slide #show .slide2 p, #slide #hide .slide2 p {
+	padding:48px 30px 20px 30px;
+}
+#slide #show p a, #slide #hide p a {
+	color:#FFF;
+}
+#slide #show h4, #slide #hide div.slide2 h4 {
+	position:absolute;
+	top:140px;
+	right:20px;
+	height:270px;
+	width:296px;
+}
+#cache {
+	display:none;
+}
+

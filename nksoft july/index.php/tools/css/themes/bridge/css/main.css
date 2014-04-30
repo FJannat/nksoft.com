@@ -1,0 +1,2959 @@
+
+/*
+DESIGN AND CODE: JELL CREATIVE (www.jellcreative.com)
+*/
+
+/* HTML5 display definitions */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+	
+/* 
+Start: Globals 
+*/
+body, html, p, div, h1, h2, h3, h4, h5, h6, ul, li, ol, span, textarea, form, img, #main input, #main button, a {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	list-style-type: none;
+	text-decoration: none;
+	/*font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;*/
+	-webkit-text-size-adjust: none;
+	}
+body, html, p, div, h1, h2, h3, h4, h5, h6, ul, li, ol, span, textarea, form, img{
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	}	
+input, textarea{
+	outline:none;
+	/*
+	transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-webkit-transition: color 0.3s; 
+	-o-transition: color 0.3s; 
+	*/
+	}	
+
+#main_wrap input,
+#main_wrap textarea{
+	
+	color:#666;
+	background-color:#efefef;
+	border:solid 1px #ccc;
+	font-size:14px;
+	padding:6px;
+	/*
+	transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-webkit-transition: color 0.4s; 
+	-o-transition: color 0.4s; 
+	transition: background-color 0.4s;
+	-moz-transition: background-color 0.4s;
+	-webkit-transition: background-color 0.4s; 
+	-o-transition: background-color 0.4s; 
+	*/
+	}	
+#main_wrap input:focus,
+#main_wrap textarea:focus{
+color:#333;
+background-color:#ccc;
+}	
+a img{   border: 0px; }
+img{font-size: 11px; color: #666; }
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #163961;
+	}
+h1, h2, h3, h4, h5, h6, p, ul, li, blockquote{
+	font-weight: normal;
+	font-style:normal;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+	}
+/* font families 
+
+font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+font-family:'HelveticaNeueW01-55Roma', Arial, Helvetica, sans-serif;
+font-family:'HelveticaNeueW01-56It', Arial, Helvetica, sans-serif;
+font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+font-family:'HelveticaNeueW01-66Medi', Arial, Helvetica, sans-serif;
+
+*/	
+	
+	
+	
+#head a,
+#secondary_nav a{
+	font-style: normal;
+	}
+sub{
+	position:relative;
+	font-size:.75em;
+	vertical-align:baseline;
+	top:2px;
+	}
+sup{
+	position:relative;
+	/*font-size:.75em; */
+	vertical-align:baseline;
+	top:-4px;
+	}
+strong, strong em, em strong{
+	font-weight: normal;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+}
+p, li, blockquote, img, #main ol li p, #main ol ul li{
+}
+
+	
+	
+#main ol li p, #main ol ul li, li{
+	/*margin-bottom:.5em;*/
+	}	
+	#main ol li p{
+	display:inline;
+	
+	}
+#noscript{
+  background-color:#333;
+  width:100%;
+  padding:8px;
+  text-align:center;
+  }
+#noscript p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#CCCCCC;
+  line-height:normal;
+  margin-bottom:0px;
+  }
+
+/* End: Globals */
+
+/***************** { Start: Main Typography overrides} *****************/
+
+
+#main h1, #main h2, #main h3, #main h4 #main h5, #main h6, #main p, #main li{
+	/*letter-spacing:1px; */
+	}
+h1, h2, h3, h4 h5, h6{
+color:#2aa1dd;
+}
+
+
+h1{
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	font-size:30px;
+	line-height: 1.35em;
+	line-height: 1.15em;
+	margin-bottom:0.3em;
+	font-weight:normal;
+	}
+h2{
+	font-size:18px;
+	color:#666;
+	font-weight:normal;
+	line-height: 1.5em;
+	margin-bottom:0.7em;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	}
+	
+/* subheads */	
+h3, h4{
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-transform:uppercase;
+	line-height: 1.3em;
+	margin-bottom:0px;
+	}
+h3, #main h3 a:link, #main h3 a:hover, #main h3 a:visited,
+h4, #main h4 a:link, #main h4 a:hover, #main h4 a:visited{
+	color:#2aa1dd;
+	}	
+h4{
+	text-transform:none;
+	color:#163961;
+	}
+h3 em, h4 em{
+	font-family:'HelveticaNeueW01-66Medi', Arial, Helvetica, sans-serif;
+	
+	}
+	
+	
+	
+		
+h5{
+	font-size:14px;
+	margin:0px;
+	line-height:normal;
+	}
+
+p, li, blockquote{
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #555;
+	line-height: 1.5em;
+	margin-bottom: 1.0em;
+	font-weight:normal;
+	}
+p em, #main li em{
+	font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+	font-style:normal;
+	}
+	
+#main a:link,
+#main a:visited,
+#main h1 a:hover,
+#main h2 a:hover,
+a#regenerate_captcha {
+	color:#2aa1dd;
+	/*
+	transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-webkit-transition: color 0.4s; 
+	-o-transition: color 0.4s; 
+	*/
+
+	}
+#main a:hover{
+	color:#999;
+	}
+	a#regenerate_captcha{
+	font-size: 12px;	
+	}
+blockquote, 
+blockquote p{
+	color:#2AA1DD;
+	padding: 0px;
+	margin:0px;
+	}	
+#main ol,
+#main ul{
+margin-bottom:0px;
+}
+#main #sidebar ol,
+#main #sidebar ul{
+/* padding-bottom:.5em; */
+overflow:auto;
+}
+
+
+
+
+
+/***************** { End: Main Typography overrides } *****************/
+
+
+/* ---------------------------------------------------
+
+M A I N  S T R U C T U R E 
+
+--------------------------------------------------- */
+
+
+#wrap_a{
+	text-align:center;
+	width:960px;
+	margin:0px auto;
+	height:40px;
+	}
+#wrap_b{
+	text-align:left;
+	float:left;
+	display:inline;
+	width:940px;
+	margin:0px 10px;
+	
+	}
+#main{
+	float: left;
+	display: inline;
+	width: 880px;
+	background-color:#FFF;
+	padding:30px;
+	}
+#main_wrap{
+	float: left;
+	display: inline;
+	width: 920px;
+	text-align:left;
+}	
+
+/* header */	
+header{
+	float:left;
+	display:inline;
+	margin:15px 0px 30px 0px;
+	width:940px;
+	/*position:relative;*/
+	
+	}
+header a{
+	letter-spacing:1px;
+	}	
+#logo{
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/logo.gif');
+	background-repeat:no-repeat;
+	width:220px;
+	height:63px;
+	cursor:pointer;
+	float:left;
+	display:inline-block;
+	}
+#logo img{ /* hide print version of logo */
+	display:none;
+	}	
+			
+		
+/* search box */
+#general_search {
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/search_bg.gif');
+	background-repeat:no-repeat;
+	margin: 0px;	
+	padding: 4px;
+	width: 148px;
+	height: 25px;
+	position:relative;
+	}
+nav #topnav li#general_search{
+	margin-top:-3px;
+	}
+#general_search #gen_query{
+	background-color:transparent;
+	color:#a1b2c6;
+	border:none;
+	font-size:12px;
+	width:116px;
+	margin-top:1px;
+	 position:absolute;
+  	left:7px;
+  	top:3px;
+	}
+#general_search #gen_query:focus{
+	color:#fff;
+	}
+#gen_search_go {
+  cursor: pointer;
+  background-image:none;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  width: 28px;
+  height: 25px;
+  overflow: hidden;
+  background-color:transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+  text-indent:-999px;
+  font-size: 0; 
+  display:block; 
+  line-height: 0;
+}
+#gen_search_go:hover{
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/search_btn_hov.gif');
+	background-repeat:no-repeat;
+	
+	}
+
+
+
+
+
+/* ---------------------------------------------------
+
+H O M E P A G E
+
+--------------------------------------------------- */
+
+#homebanner{
+}
+#homefeatures{
+	float:left;
+	display:inline;
+	width:880px;
+	margin-top:30px;
+	}
+#homefeatures div{
+	float:left;
+	display:inline;
+	width:160px;
+	margin-right:30px;
+	
+}
+
+#homefeatures div.intro{
+	border-left:solid 1px #999;
+	padding-left:30px;
+	margin-right:0px;
+	width:279px;
+	}
+#homefeatures div a.more,
+.gallery_row a.more,
+#homefeatures a,
+.searchResult a.more{
+	font-size:12px;
+	display: inline;
+	font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+}
+#homefeatures div.ccm-area, #homefeatures div.ccm-block {
+/* added by VC: had to....edit mode divs were sporking out b/c of generic #homefeatures div declaration */
+	padding:0px;
+	margin:0px;
+	width:100%;
+	}
+#homefeatures img{
+	margin-bottom:10px;
+	}	
+#main #homefeatures a{
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	}	
+#main #homefeatures a em{
+	font-family:'HelveticaNeueW01-66Medi', Arial, Helvetica, sans-serif;
+	}
+#main #homefeatures h4{
+	line-height:1.35em;
+	color: #2AA1DD;
+	}
+
+#main #homefeatures h2{
+	font-size:20px;
+	margin-top:-0.3em;
+	color: #2AA1DD;
+	margin-bottom:6px;
+	line-height:1.35em;
+	}		
+#main #homefeatures p{
+	font-size:12px;
+	line-height:1.6em;
+	margin-bottom: 0px;
+	display: inline;
+}
+#main #homefeatures .intro p,
+#main #homefeatures .intro a{
+	font-size:14px;
+	}	
+
+
+/* ---------------------------------------------------
+
+G E N E R A L  P A G E  S P E C I F I C
+
+--------------------------------------------------- */
+		
+#pg_head{
+	background-color:#e4e4e4;
+	float:left;
+	display:inline;
+	width:880px;
+	position:relative;
+	margin-bottom:26px;
+	}	
+#pg_head h2{
+	background-color:#2AA1DD;
+	font-size:34px;
+	line-height:normal;
+	color:#FFFFFF;
+	float:left;
+	display:inline;
+	/*padding:2px 15px; */
+	padding:3px 15px 7px 15px;
+	border-right:2px solid #FFF;
+	margin:0px;
+	}	
+#pg_options{
+	float:right;
+	display:inline;
+	margin:14px 14px 0px 0px;
+	}	
+#pg_options a{
+	float:left;
+	display:block;
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/page_options_icons.png');
+	width:22px;
+	height:22px;
+	margin-left:5px;
+	}
+#pdf{
+
+	}	
+#print{
+	background-position:-52px 0px;
+	}
+
+#share{
+	background-position:-26px 0px;
+	}
+
+#email{
+	background-position:-78px 0px;
+	}	
+	
+	
+#content{
+	width:650px;
+	margin-right:30px;
+	float:left; display:inline;
+	}
+#content blockquote{
+	border-left: solid 5px #e4e4e4;
+	padding-left:15px;
+	margin-bottom:1.0em;
+}	
+#content h4{
+margin-top:15px;
+}
+#content blockquote,
+#content blockquote p{
+	font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+	font-size:22px;
+	color:#2AA1DD;
+	line-height:1.5em;
+	}	
+#content blockquote p{
+text-indent:-5px;
+
+}	
+#content blockquote em,
+#content blockquote p em{	
+		font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+		}
+#content blockquote	p.attribution{
+	text-align:right;
+	font-size:12px;
+	margin-top:0px;
+	padding-left:80px;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	}
+#content blockquote	p.attribution em{
+	font-family:'HelveticaNeueW01-66Medi', Arial, Helvetica, sans-serif;
+	}	
+
+/* featured image and related */
+
+#content aside{
+	float:left; display:inline;
+	width:250px;
+	margin:5px 20px 0px 0px;
+	}	
+#content aside.perspectives_detail{
+	width:auto;
+	margin:0px;
+}
+#feature_img{
+	margin-bottom:20px;
+	border:solid 5px #e4e4e4;
+	}
+#related{
+	border:solid 1px #ccc;
+	float:left; display:inline;
+	width:232px;
+	padding:8px;
+	margin:5px 20px 15px 0px; /* added by VC because of oddball situation on Perspectives detail */
+	clear:left;/* added by VC because of oddball situation on Perspectives detail */
+	}	
+#related h5{
+	background-color:#2AA1DD;
+	font-size:18px;
+	color:#fff;
+	padding:6px;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	}
+#related p{
+	font-size:12px;
+	line-height:1.4em;
+	margin:0px;
+	}	
+	
+.related_link{
+	float:left; display:inline;
+	width:232px;
+	border-top:solid 1px #ccc;
+	padding:10px 0px;
+	}	
+.related_link.first{
+border-top:0px;
+}
+.related_link img{
+	float:left;
+	display:inline;
+	border:solid 2px #e4e4e4;
+	margin-top:2px;
+	}	
+	
+.related_link p{
+	float:right; display:inline;
+	width:160px;
+	}
+.related_link span,
+#main .related_link	a span.type:hover{
+	color:#2AA1DD;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	}	
+.related_link span.type{
+	font-size:10px; 
+	text-transform:uppercase;
+	}		
+#main .related_link	a:link,
+#main .related_link	a:visited,
+#main .related_link	a:hover{
+	color:#666;
+	}
+	
+#main .related_link	a span:hover{
+	color:#999;
+	}
+	
+/* The bridge way table */
+table.bridge_way h3{
+	font-size: 15px;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	margin:10px 0px 10px 0px;
+	letter-spacing:0.08em;
+}
+table.bridge_way td, #content table.bridge_way td{
+	padding:0px 2px;
+	border:0px;
+	}
+table.bridge_way td ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+#main table.bridge_way td li,
+table.bridge_way td li{
+
+}
+span.large_heavy{
+	font-size: 25px;
+	line-height:16px;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	}
+span.pipe{
+	padding:0px 4px;
+	color:#999;
+	}
+	/* End The bridge way table */		
+	
+/* Our Shared Values table */
+
+#content table.our_shared_values{
+border:none;
+
+}	
+#content table.our_shared_values td{
+border:none;
+border-top: solid 1px #ccc;
+vertical-align:top;
+padding-top:1em;
+}
+#main #content table.our_shared_values h4{
+margin-top:0px;
+
+}
+
+table.our_shared_values .left_col{
+	width:25%;
+	}
+
+#main #content table.our_shared_values ul,
+#main #content table.our_shared_values ol{
+	margin-bottom:1em;
+	}
+	
+
+/* ---------------------------------------------------
+
+C A R E E R S  P A G E  S P E C I F I C
+
+--------------------------------------------------- */
+
+#full_width_content{
+	width:880px;
+	float:left; display:inline;
+	}
+#careers_intro{
+	width:400px;
+	float:left; display:inline;
+	}
+#careers_intro img{
+	float:left; display:inline;
+	}	
+#careers_intro_txt{
+	width:360px;
+	float:left; display:inline;
+	background-color:#2AA1DD;
+	padding:20px;
+	}	
+#careers_intro h1,
+#careers_intro p{
+	color:#fff;
+	}
+#careers_intro p{
+
+}	
+.gradient_button{
+	background-color:#113862;
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/blue_grad_btn.gif');
+	background-repeat:repeat-x;
+	background-position:50% top;
+	padding:10px;
+	color:#fff;
+	cursor:pointer;
+	font-size:12px;
+	display:inline-block;
+	text-align:center;
+	}	
+#main a.gradient_button:link,
+#main a.gradient_button:visted{
+	color:#fff;
+	}		
+#main a.gradient_button:hover{
+color:#abcdf2;
+}
+#careers_intro .btn_left{
+	margin-right:15px;
+	}
+#careers_intro .gradient_button{
+	width:150px;
+	}
+#main #careers_intro .gradient_button:link,
+#main #careers_intro .gradient_button:visited{
+color:#fff;
+}	
+#main #careers_intro .gradient_button:hover{
+color:#ABCDF2;
+}
+#careers_right{
+	width:440px;
+	float:right;
+	display:inline;
+	border-left: solid 1px #ccc;
+	padding-left:20px;
+
+	}	
+#by_the_numbers,
+#shortcuts{
+	width:200px;
+	float:left;
+	display:inline;
+	}
+#shortcuts{
+	margin-right:40px;
+	}
+#shortcuts a{
+	display:block;
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/careers_shortcut.gif');
+	background-position:right;
+	padding:11px 0px 11px 10px;
+	font-size:17px;
+	background-repeat:no-repeat;
+	background-position:right 50%;
+	margin-bottom:8px;
+}	
+#shortcuts a:link,
+#shortcuts a:visited{
+	color:#fff;
+	line-height:17px;
+	}	
+#shortcuts a:hover{
+	color:#efefef;
+	}			
+#by_the_numbers .numbers_row{
+	border-top: solid 1px #ccc;
+	float:left;
+	display: inline;
+	margin-top:8px;
+	padding-top:8px;
+	}
+#by_the_numbers p{
+	width:121px;
+	/*width:120px;*/
+	float:right;
+	display:inline;
+	letter-spacing:normal;
+	margin-bottom:0px;
+	}	
+	
+#by_the_numbers .number{
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/gray_circle.gif');
+	background-repeat:no-repeat;
+	background-position:0px 4px;
+	width:61px; height:54px;
+	
+	position:relative;
+	float:left;
+	margin-right:10px;
+	color:#163961;
+	text-align:center;
+	font-size:36px;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	padding-top:11px;
+	}
+		
+#staff_stories{
+	width:428px;
+	padding:5px;
+	border:solid 1px #ccc;
+	float:left; display:inline;
+	margin-top:20px;
+	}
+#staff_stories h2{
+	color:#fff;
+	background-color:#2AA1DD;
+	padding:5px 8px;
+	margin-bottom:0px;
+	line-height:18px;
+	font-size:18px;
+	position:relative;
+	}
+	
+	
+#staff_stories h2 a{
+	float:right;
+	display:inline;
+	font-size:12px;
+	position:relative;
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/contact_arrow.gif');
+	background-repeat:no-repeat;
+	background-position:right top;
+	padding-right:26px;
+	text-transform:uppercase;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	line-height:20px;
+
+	}
+
+#main #staff_stories h2 a:link,
+#main #staff_stories h2 a:visited,
+#main #staff_stories h2 a:hover{
+	color:#fff;
+	}	
+
+#staff_story{
+	float:right;
+	display:inline;
+	margin-top:12px;
+	margin-right:2px;
+	/*margin-right:8px;*/
+	width:268px;
+	/*width:263px;*/
+	}	
+
+#staff_stories .story_img{
+	border: solid 5px #E4E4E4;
+	float:left;
+	display:inline;
+	margin-top:14px;
+	/*	margin-left:8px;*/
+	margin-left:2px;
+	}	
+#staff_stories p{
+	margin-bottom:8px;
+	}	
+#staff_stories p.name_title{
+	color:#999999;
+	font-size:12px;
+
+	}
+#staff_stories p.name_title a{
+	color:#2AA1DD;	
+	word-spacing: -0.1em; /* Oblique font seems too far away from roman text before it */
+	font-size:18px;
+	}	
+#staff_stories p.name_title a em{
+	font-size:14px;
+	font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+	}	
+	
+/* ---------------------------------------------------
+
+C A R E E R S  D E T A I L
+
+--------------------------------------------------- */		
+	
+.full_width_banner img,
+.career_banner{
+	margin-top:8px;
+	margin-bottom:20px;
+}
+
+/* ---------------------------------------------------
+
+C L I E N T  R E S U L T S  D E T A I L
+
+--------------------------------------------------- */	
+#client_quote{
+	float:left;
+	display:inline;
+	clear:left;
+	width:220px;
+	border:solid 1px #ccc;
+	padding:10px 10px 8px 10px;
+	margin: 5px 20px 10px 0px;
+	
+	}
+#client_quote p{
+	font-size:12px;
+	font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+	position:relative;
+	text-indent:20px;
+	margin-bottom:0px;
+	}	
+#client_quote p em{	
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	}
+#client_quote span{
+	font-size:42px;
+	position:absolute;
+	margin-top:-4px;
+	color:#2AA1DD;
+	text-indent:4px;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	line-height:42px;
+	}	
+#client_quote span.open_quote{
+	text-indent:0px;
+	left:0px;
+
+	}	
+#client_quote p.attribution{
+margin:0px;
+padding:0px;
+text-align:right;
+}
+	
+	
+	
+/* ---------------------------------------------------
+
+G A L L E R Y  P A G E S
+
+--------------------------------------------------- */	
+.gallery_row{
+	margin-top:15px; 
+	padding-bottom:15px;
+	border-bottom: solid 1px #ccc;
+	float:left;
+	display:inline;
+	width:650px;
+	}	
+.gallery_row img{
+	/* border included below */
+	float:left;
+	display:inline;
+	width:190px;
+	margin-top:4px;
+}	
+.gallery_row  h2,
+.gallery_row  p{
+	width:430px;
+	float:right;
+	display:inline;
+	margin-bottom:5px;
+	}
+.gallery_row  h2{
+	line-height:1.3em;
+	}	
+.gallery_row  h2 span{
+	font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+	font-size:14px
+}	
+.gallery_row.no_image h2,
+.gallery_row.no_image p {
+width: 100%;
+float:right;
+}
+
+#main p.exp_ind{
+	font-size:12px;
+	margin:6px 0px 3px 0px;
+	
+	letter-spacing:0.05em;
+	}
+#main .gallery_row .exp_ind span{
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	}
+	
+	
+	
+	
+	
+/* ---------------------------------------------------
+
+T E A M  D E T A I L
+
+--------------------------------------------------- */	
+#team_highlight{
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom: solid 1px #ccc;
+	float:left;
+	display:inline;
+	width:650px;
+}
+#team_highlight h1,
+#team_highlight p{	
+	float:right;
+	display:inline;
+	margin-bottom:5px;
+	width:100%;
+}
+
+#team_highlight h1{
+line-height:25px;
+margin: 5px 0px 10px 0px;
+}
+#team_highlight h1 span{
+font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+font-size: 22px;
+word-spacing: -0.08em; /* Oblique font seems too far away from roman text before it */
+}
+#team_highlight #image,
+#main_perspectives_detail_image
+{
+	border: solid 5px #E4E4E4;
+	float:left;
+	display:inline;
+	margin-top:7px;
+	/* VC 02-15-12 margin-top:4px; */
+	width:240px;
+}
+#main_perspectives_detail_image{
+	margin:5px 20px 15px 0px;
+	float:left;
+}
+#team_highlight #image img,
+#main_perspectives_detail_image img{
+float:left;
+}
+
+#team_highlight #details{
+	float:left;
+	display:inline;
+	width:380px;
+	padding-left:20px;
+}
+	
+#team_bodyarea{
+/* c5 was acting funky...didnt want to have to add this */
+width: 100%;
+float:left;
+}
+#team_image {
+	float: left; 
+	margin-right: 20px;
+	width: 244px;
+	height: 143px;
+	overflow: hidden;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	border: 5px solid #e4e4e4;
+}
+#team_info h1 {
+	font-size: 30px;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+}
+#team_info h1 span {
+	font-size: 20px;
+	font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+}
+#team_member_email_phone {
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+#team_highlight #details span.phone{
+	color: #2AA1DD;
+}
+#team_info p {
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;	
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	color: #666;
+}
+
+.team_tags, 
+.list_tags, 
+#team_highlight .team_tags{
+float:left;
+width:100%;
+margin-top:8px;
+}
+.team_tags  p, #main .list_tags p{
+font-size:13px;
+color: #2AA1DD; 
+margin-bottom: 0px;
+}
+#team_highlight .team_tags p{
+margin-bottom:0px;
+}
+.team_tags  p a{
+/* border-bottom:1px solid #2AA1DD; */
+padding-bottom:1px;
+}
+.team_tags span.tag_runin,
+.list_tags span {
+text-transform:uppercase;
+padding-right:3px;
+font-size:12px;
+color:#666;
+/* font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif; */
+
+}
+#content_inner {
+	float: none;
+	clear: both;
+	margin-top: 20px;
+	border-top: 1px #ccc solid;
+	padding-top: 20px;
+}
+/* end TEAM DETAIL  */
+
+
+
+
+
+
+	
+/* begin TEAM GALLERY  */
+#team_details_wrapper{
+width:430px;
+float:right;
+}
+#team_details_wrapper.team_tags{
+margin-top:0px;
+}
+/* end TEAM GALLERY  */	
+
+
+
+
+
+	
+/* ---------------------------------------------------
+
+P E R S P E C T I V E S   S P E C I F I C
+
+--------------------------------------------------- */	
+	
+
+#perspectives_menus {
+	float: right;
+    padding:0px;
+    margin:0px 0px 0px 0px;
+    list-style: none;
+    clear:right;
+    display:inline;
+    width:auto;
+	margin-top:12px;
+    }	
+	
+#main #perspectives_menus li{
+	background-image:none;
+	padding:0px;
+	line-height:normal;
+	list-style-type:none;
+	list-style-image:none;
+	
+	}
+#main #perspectives_menus ul{
+	margin:0px;
+	}	
+#perspectives_menus li{
+	background-color:#a3a4a6;
+	background-image:none;
+	margin:0px;
+	float:left;
+	margin:0px;
+	margin-right:15px;
+	}
+#perspectives_menus li li{
+	background-color:#313131;
+	}
+#perspectives_menus li li a:link,
+#perspectives_menus li li a:visited{
+background-image:none;
+
+text-transform:none;
+color:#ccc;
+}		
+#perspectives_menus li li a:hover{
+color:#fff;
+
+}
+#perspectives_menus li a:link,
+#perspectives_menus li a:visited{
+	color:#fff;
+	font-size:12px;
+	line-height:normal;
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/quick_jump_arrow.gif');
+	background-position:94% 50%;
+	background-repeat:no-repeat;
+	padding-right:30px;
+	letter-spacing:1px;
+	width:140px;
+	padding-left: 8px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}	
+/* sub-menu items */
+#perspectives_menus li ul li a:link,
+#perspectives_menus li ul li a:visited{
+letter-spacing:0px;	
+}	
+
+
+#kicker{
+	font-size:14px;
+	text-transform:uppercase;
+	border-bottom:solid 1px #ccc;
+	/*float:left;  had to remove ... was sporking out 
+	display:inline;*/
+	width:650px;
+	padding-bottom:8px;
+	margin-bottom:18px;
+	letter-spacing:1px;
+	margin-top:6px;
+	font-family:'HelveticaNeueW01-55Roma', Arial, Helvetica, sans-serif;
+	}
+#kicker #pg_options{
+margin-top:-5px;
+margin-right:0px;
+	}
+
+/* perspectives search box */
+#perspective_search {
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/per_search_bg.gif');
+	background-repeat:no-repeat;
+	padding: 4px;
+	width: 192px;
+	height: 25px;
+	position:relative;
+	margin-bottom:10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+#perspective_search #per_query{
+	background-color:transparent;
+	color:#999;
+	border:none;
+	font-size:12px;
+	width:163px;
+	margin-top:2px;
+	 position:absolute;
+  	left:7px;
+  	top:3px;
+	}
+#perspective_search #per_query:focus{
+	color:#666;
+	}
+#per_search_go {
+  cursor: pointer;
+  background-image:none;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  width: 28px;
+  height: 25px;
+  overflow: hidden;
+  background-color:transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+  text-indent:-999px;
+  font-size: 0; 
+  display:block; 
+  line-height: 0;
+}
+#per_search_go:hover{
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/per_search_btn_hov.gif');
+	background-repeat:no-repeat;
+	
+	}
+	
+/* perspectives landing pages */
+
+#feature{
+	float:left;
+	display:inline;
+	width:650px;
+	margin-bottom:10px;
+	}
+#feature img{
+	border: solid 5px #E4E4E4;
+	float:left;
+	display:inline;
+	margin-top:4px;
+	
+	}
+#feature .info{
+	display: inline;
+	width: 650px; /* switches to 380 if there is a thumbnail */
+	float: right;
+	}	
+#main .sml_kicker,
+#main p span.sml_kicker{
+	font-size: 12px;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	color: #666;
+	text-transform: uppercase;
+	}
+
+#feature h5{
+	margin-bottom: 2px;
+	}
+
+#main p.tags{
+	font-size: 12px;
+	color: #2AA1DD;
+	}	
+#main #feature p,
+#feature .more{
+	margin-bottom: .75em;
+	}	
+	
+#feature .more,
+#contact_block a.more
+{
+	background-image: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/blue_circle_arrow.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 22px;
+	font-size: 14px;
+	line-height: 17px;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	display: inline-block;
+	}	
+ #contact_block a.more{
+	 background-image: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/contact_arrow.gif');
+	 }
+ #ic_tags{
+	 margin:15px 0px;
+	 float:left;
+	 display:inline;
+	 width:200px;
+	  
+	 }
+
+ #ic_tags h2 {
+ color:#2AA1DD;
+ border-bottom:1px solid #CCC;
+	margin-bottom: 0px;
+	padding-bottom:5px;
+ }
+
+ 
+/* ---------------------------------------------------
+begin T A B B E D   A R E A S
+--------------------------------------------------- */	
+#main .page_tabs {
+margin-top: 30px;
+}
+#main  ul.tab_nav 
+{
+list-style-type: none;
+width: 100%;
+height: 32px;
+border-bottom: 3px solid #1892cf;
+padding-bottom: 0px;
+margin-bottom: 0px;
+margin-left:0px;
+float:left;
+overflow:hidden;
+}
+#main .tab_nav li 
+{
+border-right: 1px solid #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	float: left;
+	list-style-type: none;
+background: none;
+	padding: 0px;
+	display: block;
+background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/tab_bg.gif') repeat-x left top;
+	margin-bottom: 0px;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: 0px;
+}
+#main .tab_nav li.selected {
+background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/tab_selected_bg.gif') repeat-x left top;
+border-bottom: 1px #fff solid;
+}
+#main .tab_nav li a {
+display: block;
+padding: 5px 15px;
+font-size: 14px;
+color: #fff;
+}
+#main .tab_nav li:hover{
+background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/tab_hover_bg.gif') repeat-x left top;
+}
+#main .tab_contents 
+{
+clear: left;
+border: 2px solid #e4e4e4;
+border-top: 0px;
+padding: 15px;
+}
+/* ---------------------------------------------------
+end T A B B E D   A R E A S
+--------------------------------------------------- */	
+
+
+
+
+
+
+	
+/* inner tab page contents */
+#main .page h2,
+#main .page p{
+margin-bottom:5px;
+}
+#main .page p a{
+font-size:12px;
+}
+.page {
+		clear: both;
+		padding-bottom: 15px;
+		border-bottom: 1px #ccc solid;
+		margin-bottom: 15px;
+		width: 620px;
+}
+.page.last{
+		border-bottom: 0px;
+		margin-bottom:0px;
+		padding-bottom:0px;
+}
+.page img {
+		float: left;
+		width: 150px;
+		height: 84px;
+		border: 5px solid #dedede;
+		margin: 2px 10px 0px 0px;
+		display: block;
+}
+.page_text_content {
+		float: right;
+		width: 445px;
+}
+.page_text_content h2 {
+		margin-top: 0px;
+		padding-top: 0px;
+}
+#main a#showPages {
+		display: block;
+		background: #ececec;
+		font-size: 14px;
+		padding: 10px;
+		font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+		color: #666;
+		text-align: center;
+		margin-top:10px;
+}
+/* END inner tab page contents */
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ---------------------------------------------------
+
+I M A G E   B O R D E R   R O L L O V E R S
+
+--------------------------------------------------- */	
+.gallery_row img,
+#staff_stories .story_img,
+#feature a img{
+	border: solid 5px #E4E4E4;
+	/*
+	transition: border 0.4s;
+	-moz-transition: border 0.4s;
+	-webkit-transition: border 0.4s; 
+	-o-transition: border 0.4s; 
+	*/
+
+	
+	}
+.gallery_row a:hover img,
+#staff_stories a:hover .story_img,
+#feature a:hover img{
+	border: solid 5px #ccc;
+}		
+	
+
+
+/* ---------------------------------------------------
+
+C O N T A C T   P A G E
+
+--------------------------------------------------- */	
+
+
+#contact_form{
+	float:left;
+	display:inline;
+	width: 500px; /*(477) */
+	font-size:14px;
+	color:#666;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	margin-top:10px;
+	}
+#contact_form table{
+width: 500px;
+}	
+#contact_form .question{
+	width:150px;
+	}
+#contact_form .required{
+	color:#2AA1DD;
+	}
+#contact_form input[type=text],
+#contact_form input[type=tel],
+#contact_form textarea{
+	background-color:#efefef;
+	border:solid 1px #ccc;
+	padding:6px 4px;
+	font-size:14px;
+	color:#999999;
+	width:100%;
+	/*
+	transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-webkit-transition: background 0.4s; 
+	-o-transition: background 0.4s; 
+	*/
+	}
+	
+#contact_form input[type=text]:focus,
+#contact_form input[type=tel]:focus,
+#contact_form textarea:focus{
+	color:#666;
+	background:#fff;
+	}	
+	
+#contact_form .radioPair{
+	float:left;
+	display:inline;
+	margin-right:15px;
+	margin-bottom:5px;
+	}	
+#contact_form td{
+	padding-bottom:18px;
+	}	
+#contact_form input[type=submit]	{
+	background-color: #2AA1DD;
+	display:block;
+	cursor:pointer;
+	padding:10px 18px; 
+	text-align:center; 
+	font-size:16px; 
+	letter-spacing:1px;
+	color:#fff;
+	font-weight:normal;
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	}
+
+
+
+	
+/* ---------------------------------------------------
+begin S E A R C H   R E S U L T S
+--------------------------------------------------- */	
+.search_rightcol {
+	float: right;
+	width: 205px;
+	margin-left: 20px;
+}
+#searchResults {
+	width: 640px;
+}
+#main .search_rightcol p {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+}
+#main .search_rightcol h3 {
+	text-transform: none;
+	font-size: 16px;
+	font-family: 'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	margin-top: 25px;
+}
+#main .search_rightcol .removeFilter {
+	position: absolute;
+	margin-top: 2px;
+	margin-left: 7px;
+}
+#main .search_rightcol .tag-list {
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#main .search_rightcol .tag-list h4,
+#main .search_rightcol .tag-list h4 a {
+	font-size: 10px;
+	line-height: 12px;
+	text-transform: uppercase;
+}
+#main .search_rightcol .tag-list ul {
+	margin: 0;
+	padding: 0;
+	margin-left: 15px;
+	margin-top: 5px;
+	list-style-image:none;
+}
+#main .search_rightcol .tag-list li,
+#main .search_rightcol .tag-list li a {
+	font-size: 12px;
+	color: #666;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+}
+#main .search_rightcol .tag-list li a.showMore {
+	color: #2AA1DD;
+	font-size: 12px;
+}
+#searchResults .pageThumb {
+	width: 57px;
+	border: 2px solid #ccc;
+	float: left;
+	display: block;
+	margin-right: 10px;
+}
+#searchResults .searchResult {
+	clear: left;
+	margin: 0;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#main #searchResults .searchResult h2 {
+	text-transform: uppercase;
+	font-size: 10px;
+	color:#666;
+	line-height:18px;
+	margin: 0;
+	padding: 0;
+}
+#main #searchResults .searchResult h3 {
+	font-family: 'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	font-size: 18px;
+	text-transform: none;
+	font-weight:normal;
+}
+#main #searchResults .searchResult p {
+	font-size: 14px;
+	color: #666;
+	margin-bottom:0px;
+}
+#main #searchResults .searchResult p .moreLink,
+#main #searchResults .searchResult p .moreLink a,
+#main #searchResults .searchResult p.resultTags,
+#main #searchResults .searchResult p.resultTags a {
+	font-size: 12px;
+}
+#main #searchResults .searchResult p.resultTags{
+margin-bottom:10px;
+}
+
+#main .search_rightcol input.ccm-search-block-text
+{
+	background: #d9d9d9;
+	border-radius: 5px;
+	padding: 5px;
+	color: #666;
+	font-size: 10px;
+	display: block;
+	width: 195px;
+}
+#main .search_rightcol input.ccm-search-block-submit 
+{
+	position: absolute;
+	display: block;
+	margin-top: -18px;
+	margin-left: 185px;
+	font-size: 0px;
+	background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/search-icon.gif');
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	color: #d9d9d9;
+	font-size: 0px;
+}
+#main #page_menu a {
+	font-size: 18px;
+	color: #999;
+	display: block;
+	float: left;
+	margin-right: 4px;
+}
+#main #page_menu a.selected {
+	color: #2aa1dd;
+}
+#main .search_rightcol .tag-list h4 {
+	color: #1792cf;
+}
+#main .searchResult img.ccm-output-thumbnail {
+	float: left;
+	border: 2px solid #ccc;
+	display: block;
+	margin: 9px 10px 5px 0px;
+}
+#main #searchResults .searchResult h2,
+.searchResult p a {
+	font-family: 'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+}
+.searchResult p.resultTags span {
+	font-family: 'HelveticaNeueW01-75Bold', Arial, Helvetica, sans-serif;
+}
+.searchResult p.resultTags a,
+.searchResult p h3 a {
+	font-family: 'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+
+}
+#main .searchResult p span.highlight {
+	background: #ffc;
+	font-family: 'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+}
+#main img.page_arrow {
+    display: block;
+    margin-top: 2px;
+    position: relative;
+}
+#main img.search_filter_remove {
+		position: absolute;
+		padding: 3px 0px 0px 5px;
+}
+#searchResults .pageLink{ font-size:12px; color:#999; margin:2px 0px 8px 0px; padding:0px; display:block }
+#searchResults .searchResult{ margin-bottom:16px; margin-top:10px }
+#searchResults .searchResult h3{ margin-bottom:0px; padding-bottom:0px }
+#searchResults .searchResult p{margin-top:4px}
+
+#main .gallery_row h3 {
+		font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+    color: #666666;
+    font-size: 10px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+float: right;
+    margin-bottom: 5px;
+    width: 430px;
+}
+#main .gallery_row.no_image h3 {
+		width: auto;
+		float: none;
+}
+/* ---------------------------------------------------
+end  S E A R C H   R E S U L T S
+--------------------------------------------------- */	
+	
+	
+	
+	
+/* ---------------------------------------------------
+
+S I D E B A R 
+
+--------------------------------------------------- */
+
+
+#sidebar,
+#side_nav{
+	width:200px;
+	float:right; display:inline;
+	text-align:left;
+}
+#sidebar h3{
+font-size:12px;
+}
+#sidebar p{
+font-size:13px;
+}
+#main #side_nav{
+margin-bottom:20px;
+}
+#main #side_nav li{
+	padding:0px;
+	margin:0px;
+	background-image:none;
+}
+#main #side_nav li a{
+	padding:4px 0px;
+	line-height:1.5em;
+}
+#main #side_nav ul{ /* for second-level side nav */
+	margin: 0px;
+}
+#main #side_nav ul li a{ /* for second-level side nav */
+	padding-left: 10px;
+}
+#main #side_nav li a:link,
+#main #side_nav li a:visited,
+#main #side_nav ul li a:link,
+#main #side_nav ul li a:visited,
+#main #side_nav li.nav-path-selected li a:link, /* for second-level side nav */
+#main #side_nav li.nav-path-selected li a:visited  /* for second-level side nav */
+{
+	display:block;
+	border-bottom:solid 1px #ccc;
+	font-size:12px;
+	/* changed by VC on 2-15-12. Used to be: font-size:11px; */
+	color:#666;
+}	
+
+
+#main #side_nav li a.indent{
+padding-left:10px;
+
+}
+	
+#main #side_nav li a:active,
+#main #side_nav li.nav-path-selected a:link,
+#main #side_nav li.nav-path-selected a:visited,
+#main #side_nav li.nav-path-selected a:hover{
+	color:#2AA1DD;
+}	
+#main #side_nav li.parent_link a{
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+}	
+#main #side_nav li a:hover,
+#main #side_nav li.nav-path-selected li a:hover/* second level item hover */
+{ 
+	color:#999;
+}
+
+					#main #sidebar ul#side_nav, #main #sidebar ul#side_nav {
+							overflow: visible;
+					}
+/* contact block */
+#contact_block{
+	background-color:#2AA1DD;
+	padding:8px 12px 12px 12px;
+	float:left; display:inline;
+	width:176px;
+	margin-bottom:1em;
+	}	
+
+#contact_block h2,
+#contact_block p{
+	color:#fff;
+	margin:0px;
+	padding:0px;
+	}	
+#contact_block h2{
+margin:0px 0px 5px 0px;
+}
+#contact_block p{
+	font-size:12px;
+	}
+#main #contact_block p a,
+#main #contact_block h2 a{
+color:#FFF;
+
+
+}
+
+#contact_block h2 img{
+	position:relative;
+	top:2px;
+	}	
+input.sem-submit {
+		font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+}
+/* team block */	
+
+#team_block{
+	float:left; display:inline;
+	width:200px;
+	background-color:#0066FF;
+	height:10px;
+}
+
+.previous_next_button{
+	cursor:pointer;
+	}
+				
+		
+		
+/* ---------------------------------------------------
+
+F O O T E R
+
+--------------------------------------------------- */		
+	
+
+footer{
+	float:left;
+	display:inline;
+	background-color:#173350;
+	width:940px;
+	margin-top:30px;
+	margin-bottom:30px;
+	text-align:left;
+	
+	}
+
+footer p,
+footer li{
+	color:#fff;
+	font-size:11px;
+	margin-bottom:0px
+	
+	}	
+footer p{
+	letter-spacing:1px;
+	
+	}	
+footer li{
+	font-size:11px;
+	
+	}		
+footer a:link,
+footer a:visited{
+
+	color:#557291;
+	}	
+footer a:hover{
+	color:#A1B2C6;
+	}		
+#footer_top .left,
+#footer_top .right,
+#footer_top,
+#footer_btm	{
+	display:inline;
+	float:left;
+	}	
+#footer_top,
+#footer_btm{
+	border-bottom:solid 1px #557291;
+	padding:20px 30px;
+	width:880px;
+	}
+#footer_btm{
+	border:none;
+	}	
+
+#footer_top .left{
+	width: 540px;
+	}	
+#footer_top .right{
+	float:right;
+	text-align:right;
+	width:279px;
+	}	
+	
+#footer_btm div{
+	float:left;
+	display:inline;
+	width:205px;
+	margin-right:20px;
+	}
+#footer_btm div.last{
+	margin-right:0px;
+	}
+      
+footer #footer_btm li a{
+    text-transform:uppercase;
+    color:#A1B2C6;
+    }
+footer #footer_btm li li a:link,
+footer #footer_btm li li a:visited{
+	color:#557291;
+	}
+footer #footer_btm li li a:hover{
+	color:#A1B2C6;
+	}	
+footer #footer_btm li li a{
+    text-transform:none;
+    margin:0px;
+    padding:0px;
+    }  
+footer li{
+	margin-bottom:6px;
+	color:#A1B2C6;
+	}	
+footer li li{
+	margin-bottom:0px;
+	} 
+        
+footer li{
+
+    text-indent:0px;
+    padding:0px;
+    }   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+/************************************* BEGIN MAIN NAVIGATION *************************************/
+nav .nav a, nav .nav a:link, nav .nav a:hover, nav .nav visited{
+    border-bottom:none;
+    }
+nav #topnav{
+	position:absolute;
+	right:0px;
+	top:0px;
+	}		
+    
+#head nav{
+    width:700px;
+    float:right;
+    display:inline;
+    }   
+nav .nav{
+	float: right;
+    padding:0px;
+    margin:45px 0px 0px 0px;
+    list-style: none;
+    clear:right;
+    display:inline;
+    width:auto;
+    }
+ .nav li a.nav-selected{
+color:#2AA1DD;
+ }
+    
+nav .nav ul,
+perspectives_menus ul{
+    float: left;
+    padding:0px 0px 0px 0px;
+    list-style: none;
+    display:inline;
+    }
+    
+/*Top level nav a:link state*/
+    
+nav .nav a,
+nav #topnav a,
+#perspectives_menus a{
+   text-transform:uppercase;
+	margin:0px 0px 0px 0px;
+    display:block;
+	/*transition: color 0.4s;
+	-moz-transition: color 0.4s;
+	-webkit-transition: color 0.4s; 
+	-o-transition: color 0.4s; */
+    }
+ 	
+nav #topnav a:link,
+nav #topnav a:visited{
+	font-size:11px;
+	color:#a1b2c6;
+	}
+nav #topnav a:hover{
+	color:#fff;
+	}	
+nav #topnav a.nav-selected
+{
+color: #2AA1DD;
+}	
+
+nav .nav a{	
+	font-size:12px;
+     color:#fff;
+	 }	
+nav .nav li,
+nav #topnav li  {
+	text-align: left;
+    float:left;
+    display:inline;
+    padding:0;
+    margin: 0px;
+	color:#FFF;
+    }
+nav #topnav li {
+	margin-left:20px;
+	}
+nav .nav li{
+	margin-left:38px;
+}		 
+   
+    
+    
+/*second level*/
+nav .nav ul,
+#perspectives_menus ul{
+z-index:600;
+    position: absolute;
+    left: -999em;
+    clear:both;
+/*border-top: 2px solid #FFFFFF;*/
+    height: auto;
+    width: 180px;   
+    padding: 0px;   
+    margin: 0px;
+    border: solid 1px #999;
+	background-color:#999;
+	
+    /*background-image: URL(images/nav_bg.png)*/
+    
+ }
+ #perspectives_menus ul{
+ width:178px;
+ border:0px;
+ }
+    
+/*second level background and box size*/
+nav .nav li li,
+#perspectives_menus li li{
+    width:100%;
+	margin-left:0px;
+    
+    }
+    
+nav .nav li li a{
+    line-height:1.5em;
+    text-transform:none;
+
+
+}   
+/*Second level text */
+nav .nav li li a,
+#perspectives_menus li li a{
+
+    font-size:12px;
+    padding:5px 0px 5px 9px;
+    margin:0px;
+
+    
+    }
+/*nav .nav li ul ul {
+    margin:-21px 0 0 300px;
+    }*/
+    
+/*Second level baackround color hover state  */
+nav .nav li li:hover, nav .nav li li.sfhover,
+#perspectives_menus li li:hover, #perspectives_menus li li.sfhover{
+   background-color:#666;
+
+    }
+    
+nav .nav li .parent:hover, nav .nav li .parent.sfhover {
+    background-color:#666;
+    }
+    
+.parent{
+}   
+
+    
+/*Second level a:hover text color*/
+nav .nav li.sfhover a, nav .nav li ul li:hover a, nav .nav li ul li li:hover a, nav .nav li ul li li li:hover a, nav .nav li ul li li li:hover a, nav .nav li ul li.sfhover a, nav .nav li ul li li.sfhover a, nav .nav li ul li li li.sfhover a, nav .nav li ul li li li.sfhover a{ 
+    color:#fff;
+    }
+    
+/*Main nav hover text color*/
+nav .nav li:hover a, nav .nav li.sfhover a,
+nav .nav li a.current,
+#perspectives_menus li:hover a, #perspectives_menus li.sfhover a{
+    color:#fff;
+    }
+    
+
+/*Second level a:link text color*/
+ nav .nav li:hover li a, nav .nav li li:hover li a, nav .nav li li li:hover li a, nav .nav li li li li:hover li a, nav .nav li.sfhover li a, nav .nav li li.sfhover li a, nav .nav li li li.sfhover li a, nav .nav li li li li.sfhover li a {
+    color:#FFF;
+    }
+    
+    /*hide second level*/
+nav .nav li:hover ul ul, nav .nav li:hover ul ul ul, nav .nav li:hover ul ul ul ul, nav .nav li.sfhover ul ul, nav .nav li.sfhover ul ul ul, nav .nav li.sfhover ul ul ul ul, #perspectives_menus li:hover ul, #perspectives_menus li.sfhover ul{
+    left:-999em;
+    }
+    
+    
+    /* dislpay second level */
+nav .nav li:hover ul, nav .nav li li:hover ul, nav .nav li li li:hover ul, nav .nav li li li li:hover ul, nav .nav li.sfhover ul, nav .nav li li.sfhover ul, nav .nav li li li.sfhover ul, nav .nav li li li li.sfhover ul, #perspectives_menus li:hover ul, #perspectives_menus li.sfhover ul{
+    left:auto;
+    }
+	
+    /* dislpay second level last */
+nav .nav nav .nav_last:hover ul, nav .nav nav .nav_last.sfhover ul {
+    left:auto;
+	margin-left:-94px;
+    }
+		
+ nav .nav li li:hover ul, nav .nav li li li:hover ul, nav .nav li li li li:hover ul, nav .nav li li.sfhover ul, nav .nav li li li.sfhover ul, nav .nav li li li li.sfhover ul {
+    left:160px;
+    margin-top:-1.65em;
+    float:left;
+    
+    }
+    /*Main nav rollover background color */
+nav .nav li:hover, nav .nav li.sfhover {        
+    background-image:none;
+    }
+#perspectives_menus li:hover a,
+#perspectives_menus li.sfhover a{
+	background-color:#2AA1DD;
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/quick_jump_arrow_hov.gif');
+	}
+	
+	/* second level link and hover state */
+	#perspectives_menus li li a:link,
+	#perspectives_menus li li a:visited{
+	background-color:#333;
+	} 
+	#perspectives_menus li li:hover a, 
+	#perspectives_menus li li.sfhover a{
+   background-color:#999;
+	 
+	 }
+	
+    
+nav .nav li li a:hover{
+    color:#fff;
+    } 
+    
+
+
+/************************************* END MAIN NAVIGATION *************************************/
+
+	
+
+
+/* BEGIN added for Perspectives detail admin view */
+#headlinewrap, #bylinewrap, #deckwrap,#bodywrap{
+width:100%;
+float:left;
+margin-bottom:10px;
+}
+#deckwrap{
+margin-top:8px;
+margin-bottom:4px;
+}
+#content_sidebar_edit {
+	float:left;
+	padding: 10px;
+	width:630px;
+	margin-bottom:10px;
+	background: #efefef;
+}
+#content_sidebar_edit .right{
+	float: left;
+	width: 320px;
+	padding-left: 18px;
+	border-left: 1px solid #d3d3d3;
+	margin-left: 18px;
+}
+#content_sidebar_edit .left{
+	float: left;
+	width: 250px;
+}
+
+#content_sidebar_edit h2 {
+	font-size: 14px;
+	margin: 0;
+}
+/* END added for Perspectives detail admin view */
+
+
+/* added for Perspectives detail date */
+#bylinewrap p, .page_public_date{
+display:inline;
+}
+#bylinewrap p{
+font-size:12px;
+}
+.page_public_date p{
+display:inline;
+/*margin-right:5px; */
+margin-right:0px;
+padding-right:0px;
+font-weight:bold;
+letter-spacing:0.05em;
+color:#666;
+font-size:12px;
+}
+
+
+
+
+
+
+.caption{
+font-size:12px;
+margin-top:5px;
+}
+.r_cap{
+margin-left:16px;
+text-align:right;
+}
+.l_cap{
+margin-right:16px;
+}
+.related_page_small{
+font-size:12px;
+margin-bottom:0px;
+}
+
+/*
+#page_header {
+	height: 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#page_header h1 {
+	padding: 0;
+	margin: 0;
+	padding-top: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #39c;
+}
+#page_header img {
+	float: right;
+	padding-top: 7px;
+	display: block;
+	margin-left: 4px;
+}
+*/
+
+#bylinewrap span.pipe{
+padding:0px 9px 0px 4px;
+}
+
+
+
+
+
+
+
+
+
+
+/* begin HOME BANNER */
+.slide_inner {
+	height: 275px;
+	background: #000;
+}
+.slide_text {
+	position: absolute;
+	margin: 30px;
+	background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/banner-text-bg.png');
+	width: 511px;
+	z-index: 598;
+}
+.slide_text.landing{
+	position: absolute;
+	margin: 30px;
+	background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/banner-text-bg.png');
+	width: 356px;
+}
+.slide_text_inner {
+	margin: 8px;
+	background: #FFF;
+	padding: 20px;
+}
+div.ccm-pane-controls div.slide_text_inner/* this is for the admin popup preview */
+{
+border: 1px solid #CCCCCC;
+}
+.control_set_1 {
+	position: absolute;
+	color: #fff;
+}
+.content_button {
+	float: left;
+	display: block;
+}
+.slideshow-thumb {
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #fff;
+    cursor: pointer;
+    float: left;
+    height: 34px;
+    margin-left: 6px;
+    overflow: hidden;
+    width: 54px;
+}
+.previous_button_out {
+	display: block;
+	width: 39px;
+	height: 39px;
+	font-size: 0px;
+	background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/arrow-lt.png');
+	position: absolute;
+	margin-top: -160px;
+	margin-left: -20px;
+	z-index: 599;
+}
+.next_button_out {
+	display: block;
+	width: 38px;
+	height: 39px;
+	font-size: 0px;
+	background: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/arrow-rt.png');
+	position: absolute;
+	margin-top: -160px;
+	margin-left: 860px;
+	z-index: 599;
+}
+#content .next_button_out {
+	margin-left: 630px;
+}
+.control_set_2_inner /* thumbnail holder */
+{
+	position: absolute;
+	height: 40px;
+	width: 300px;
+	margin-left: 545px;
+	margin-top: -68px;
+	z-index: 599;
+}
+.content_buttons_container {
+	float: right;
+}
+.slide_inner .kicker,
+div.ccm-pane-controls div.kicker /* this is for the admin popup preview */
+{
+	color: #666666;
+	font-size: 11px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+}
+.slide_inner h1,
+div.ccm-pane-controls h1.slide_title_preview, /* this is for the admin popup preview :: Home Slideshow */
+.slide_text_inner.landing h1
+{
+	font-size: 38px;
+	line-height:32px;
+	color: #2aa1dd;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 5px;
+	font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+}
+div.ccm-pane-controls h1.slide_title_preview.landing,/* this is for the admin popup preview :: Expertise Landing Slideshow */
+.slide_text_inner.landing h1 /*Expertise Landing Slideshow H1 override */
+{
+font-size:26px;
+}
+
+.slide_inner h2,
+div.ccm-pane-controls h2.caption_preview_text, /* this is for the admin popup preview */
+.slide_text_inner.landing h2
+{
+	color: #666;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+	line-height: 24px;
+	margin-bottom:0px;
+}
+.slide_text_inner.landing h2{
+font-size: 14px;
+}
+p.more_link{
+margin:5px 0px 0px 0px;
+padding:0px;
+line-height:normal;
+}
+.slide_inner p.more_link a,
+div.ccm-pane-controls .ccm-slideshowBlock-imgRow .caption_preview a /* this is for the admin popup preview */
+ {
+	color: #2aa1dd;
+	font-size: 14px;
+	line-height:22px;
+	text-decoration: none;
+	font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+	background-image: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/blue_circle_arrow.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 22px;
+	display:inline-block;
+
+}
+
+#main #homebanner p.more_link a{
+display:inline-block;
+
+}
+table.slideshow_edit{
+width: 500px;
+}
+table.slideshow_edit input, table.slideshow_edit textarea{
+
+width: 100%;
+}
+/* end HOME BANNER */
+
+
+
+
+/* table within Main Content area */
+#content table{
+	border-top:1px solid #CCC;
+	border-left:1px solid #CCC;
+	margin-bottom: 10px;
+	}
+#content table td{
+	font-size:14px;
+	line-height:1.5em;
+	color:#555555;
+	font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	padding:6px;
+	}
+#content table thead td{
+	background-color:#2aa1dd;
+	color:#fff;
+	}
+
+
+.experts_sidebar{
+float: left;
+margin: 10px 0px; 
+}
+
+
+/* fixing edit form z-index */
+div.ccm-dialog-window {
+	z-index: 601 !important;
+}
+div#ccm-overlay {
+	z-index: 600 !important;
+}
+div#ccm-page-detail {
+	z-index: 601 !important;
+}
+div#ccm-page-controls {
+	z-index: 602 !important;
+}
+div#ccm-highlighter {
+	z-index: 600 !important;
+}
+/* about overview table */
+
+#content table.bridge_way{
+border:none;
+}
+
+
+
+
+
+
+/* BEGIN INSET PERSPECTIVES SIDEBAR */
+#content blockquote.inset_sidebar_fullwidth,
+#content .inset_sidebar_fullwidth blockquote{
+width: 100%;
+border-left: solid 5px #e4e4e4;
+padding: 8px;
+margin:5px 0px 15px 0px;
+background-color:#e4e4e4;
+}
+
+#content blockquote.inset_sidebar_right,
+#content .inset_sidebar_right blockquote{
+float:right;
+width: 228px;
+border-left: solid 5px #e4e4e4;
+padding: 8px 8px 8px 4px;
+margin:5px 0px 15px 20px;
+background-color:#e4e4e4;
+}
+#content blockquote.inset_sidebar_left,
+#content .inset_sidebar_left blockquote{
+float:left;
+border-left: 0px;
+width: 228px;
+border-right: solid 5px #e4e4e4;
+padding: 8px 4px 8px 8px;
+margin:5px 20px 15px 0px;
+background-color:#e4e4e4;
+}
+#content blockquote.inset_sidebar_right h2,
+#content blockquote.inset_sidebar_right h3,
+#content blockquote.inset_sidebar_right h4,
+
+#content blockquote.inset_sidebar_left h2,
+#content blockquote.inset_sidebar_left h3,
+#content blockquote.inset_sidebar_left h4,
+
+#content .inset_sidebar_right blockquote h2,
+#content .inset_sidebar_right blockquote h3,
+#content .inset_sidebar_right blockquote h4,
+
+#content .inset_sidebar_left blockquote h2,
+#content .inset_sidebar_left blockquote h3,
+#content .inset_sidebar_left blockquote h4,
+
+#content .inset_sidebar_fullwidth blockquote h2,
+#content .inset_sidebar_fullwidth blockquote h3,
+#content .inset_sidebar_fullwidth blockquote h4,
+
+#content blockquote.inset_sidebar_fullwidth h2,
+#content blockquote.inset_sidebar_fullwidth h3,
+#content blockquote.inset_sidebar_fullwidth h4
+{
+margin: 0px 0px 8px 0px;
+padding:3px 5px 3px 5px;
+color:#FFF;
+font-size:14px;
+line-height:18px;
+background-color:#2AA1DD;
+font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+text-transform:none;
+}
+#main blockquote.inset_sidebar_right p,
+#main blockquote.inset_sidebar_left p,
+#main .inset_sidebar_right blockquote p,
+#main .inset_sidebar_left blockquote p,
+#main blockquote.inset_sidebar_fullwidth p,
+#main .inset_sidebar_fullwidth blockquote p
+{
+font-size:12px;
+line-height:20px;
+font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+color: #3c3c3c;
+text-indent:0px;
+margin-bottom:1em;
+}
+#content .inset_sidebar_right blockquote p+ul,
+#content blockquote.inset_sidebar_right p+ol,
+#content .inset_sidebar_left blockquote p+ul,
+#content blockquote.inset_sidebar_left p+ol,
+#content .inset_sidebar_fullwidth blockquote p+ul,
+#content blockquote.inset_sidebar_left p+ol{
+margin-top:-0.5em;
+}
+#content .inset_sidebar_right blockquote ul,
+#content blockquote.inset_sidebar_right ul,
+#content blockquote.inset_sidebar_left ul,
+#content .inset_sidebar_left blockquote ul{
+margin-bottom:5px;
+}
+#main blockquote.inset_sidebar_right ul li,
+#main blockquote.inset_sidebar_left  ul li,
+#main.inset_sidebar_right blockquote ul li,
+#main.inset_sidebar_left blockquote ul li,
+#main.inset_sidebar_fullwidth blockquote ul li,
+#main blockquote.inset_sidebar_fullwidth  ul li
+{
+font-size:12px;
+line-height:20px;
+color: #3c3c3c;
+}
+
+
+
+
+
+/* BEGIN FULL SITEMAP STYLES */
+#main ul#full_sitemap > li > ul > li, 
+#main ul#full_sitemap > li > ul > li > ul > li { 
+	/*	list-style-image: none;  */
+}
+#main ul#full_sitemap li{
+list-style-image: none;
+}
+#main ul#full_sitemap li a:link,
+#main ul#full_sitemap li a:visited{
+text-transform:uppercase;
+font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+color:#2aa1dd;
+}
+#main ul#full_sitemap li ul li a:link,
+#main ul#full_sitemap li ul li a:visited{
+text-transform:none;
+font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+
+color:#3c3c3c;
+}
+
+#main ul#full_sitemap li ul li ul li a:link,
+#main ul#full_sitemap li ul li ul li a:visited{
+text-transform:none;
+font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+color:#3c3c3c;
+}
+
+
+#main ul#full_sitemap li{
+background-image:none;
+}
+#main .search_rightcol .tag-list li a.tag-list-expand {
+		color: #2AA1DD;
+		font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+    font-size: 11px;
+		display: block;
+		margin-bottom: 5px;
+		line-height: 16px;
+}
+#main .search_rightcol .tag-list li a.tag-list-expand img {
+		padding: 3px 0 0 2px;
+    position: absolute;
+}
+
+/* NEWS */
+#main .gallery_row h3.news_public_date
+{
+		text-transform: none;
+		
+		
+		color: #666;
+		font-size: 12px;
+		font-weight: bold;
+    letter-spacing: 0.05em;
+		margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/****
+By default, bullets are hanging and the entire list will not wrap around floating elements
+BEGIN main bullet and numbered lists ******/
+#content ul{
+	list-style-type: none;
+	overflow:hidden;
+}
+#content ol{
+	list-style:decimal;
+	list-style-position:inside;
+	overflow:hidden;
+}
+#content ul li{
+	list-style:none;
+	background-image:url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/bullet.gif');
+	background-repeat:no-repeat;
+	background-position:0px 7px;
+	padding:0px 0px 0px 15px;
+	margin:0px;
+}
+#content ol li{
+	background-image:none;
+	list-style-type:decimal;
+	list-style-position:outside;
+	padding:0px;
+	margin:0px 0px 0px 27px; /* have to leave enough space so double-digit numbers fit — cannot be any smaller left margin */
+}
+
+/*
+#main ol ol,
+#main ul ul{
+	padding-bottom:0px;
+}	
+#main ol li{
+	list-style-type:decimal;
+}	
+#main ol ol li{
+	list-style-type:decimal;
+	list-style-position:inside;
+}
+#main ul ol{
+}
+#main ol li ul{
+	margin-left:35px;
+}
+#main ol ul ul{
+	padding-left:0px;
+	margin-top:0.5em;
+	}	
+#main ul>li>ul>li{
+	}
+#main ul ul, #main ul ul ul  {
+
+}
+#main ul ul{
+	margin-left:20px;
+	list-style-image: url(http://bridgestrategy.com/themes/bridge/images/bullet_level2.gif);
+	}
+#main ul+p{
+margin-top:10px;
+}
+#main ul li, #main ul li {
+padding-bottom:0px;
+margin-bottom:0px;
+}
+#main li{
+margin-bottom:0.5em;
+
+}	
+	
+
+*/
+/**** END main bullet and numbered lists ******/
+
+
+
+
+
+
+
+
+
+#main ul+p{
+margin-top:10px;
+}
+#main ul + h3{
+margin-top:1em;
+}
+#main p + ol,
+#main p + ul{	
+margin-top:-.5em;
+margin-bottom:1em;
+}
+#main li{
+/*margin-bottom:0.5em;*/
+}	
+
+/**** BEGIN WRAPPING main bullet and numbered lists ******/
+#content ul.wrapping_list{
+	list-style-type:none;
+	list-style-image: none;
+	list-style-position: inside;		
+	overflow: visible; /*  To wrap around sidebar elements, the UL needs an overflow:visible — it's the only way */
+}
+#content ul.wrapping_list ul,
+#content ul.wrapping_list ol{
+overflow: visible; /*  To wrap around sidebar elements, the UL needs an overflow:visible — it's the only way */
+}
+#content ol.wrapping_list{
+	list-style:decimal;
+	list-style-position:inside;
+	overflow:hidden;
+}
+#content ul.wrapping_list li{
+	background-image:none;
+	list-style-image: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/bullet.gif');
+	list-style-position:inside;
+	padding:0px 0px 0px 0px;
+}
+#content ul.wrapping_list ul li{
+/* 
+To wrap around sidebar elements, the UL needs an overflow:visible
+BUT BECAUSE ULs which have overflow:visible will ignore left margin and left padding ONLY when near the floating elements */
+text-indent: 15px;
+padding:0px 0px 0px 0px;
+}
+#content ul.wrapping_list ol li{
+list-style-image: none;
+list-style-type:decimal;
+text-indent: 30px; /*BECAUSE ULs which have overflow:visible will ignore left margin and left padding */
+padding:0px 0px 0px 0px;
+}
+/**** END main bullet and numbered lists ******/
+
+
+
+/* promo sidebar */
+#video_sidebar_wrap{
+margin:10px 0px 10px 0px;
+float:left;
+width:200px;
+}
+#video_sidebar_wrap img{
+float: left;
+}
+#video_sidebar_wrap #inner_content{
+background-color:#2aa1dd;
+padding:10px;
+border-top:1px solid #FFF;
+float:left;
+width:180px;
+}
+
+#video_sidebar_wrap #inner_content h1,
+#video_sidebar_wrap #inner_content h2,
+#video_sidebar_wrap #inner_content h3,
+#video_sidebar_wrap #inner_content p,
+#video_sidebar_wrap #inner_content h4,
+#video_sidebar_wrap #inner_content h5{
+color:#FFF;
+}
+#video_sidebar_wrap #inner_content h4,
+#video_sidebar_wrap #inner_content h5{
+font-size:10px;
+line-height:15px;
+text-transform:uppercase;
+letter-spacing:0.08em;
+font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+}
+#video_sidebar_wrap #inner_content h1{
+font-size:13px;
+line-height:16px;
+}
+

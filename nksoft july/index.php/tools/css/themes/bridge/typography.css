@@ -1,0 +1,257 @@
+body { 
+	font-family: Arial, Helvetica, sans-serif;
+	/* customize_body  color: #777777; 
+	line-height:18px;
+	*/}
+
+img {border: 0px}
+a,a:visited,a:active {
+	/* customize_link */ color: #66aa33; /* customize_link */
+}
+a:hover {
+	/* customize_link_hover */ color: #66CC00; /* customize_link_hover */
+} 
+h1, h3, h4, h5, a:link, a:visited{
+color: #2AA1DD;
+}
+h2{
+color: #555;
+font-weight:normal;
+}
+h1{
+	font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+	line-height:1.15em;
+}
+h2{ font-size:18px; line-height:24px }
+h3{ font-size:14px; line-height:21px; text-transform:uppercase; margin-bottom: 0px;}
+h4{ font-size:14px; line-height:18px; color:#163961; margin-bottom: 0px; }
+h5{ font-size:13px; line-height:16px }
+.mceContentBody p{
+padding:0px 0px 0px 0px;
+margin:0px 0px 12px 0px;
+font-size:14px;
+line-height:21px;
+}
+
+li{
+font-family:'HelveticaNeueW01-45Ligh', Arial, Helvetica, sans-serif;
+font-size:14px;
+line-height:1.5em;
+padding-left:0px;
+}
+
+/* IMPORTANT!!!!! IF YOU TRY TO DEFINE UL OR OL FOR TINYMCE, INDENTING WILL BREAK. */
+
+.mceContentBody p+ul{
+margin-top:-1em;
+margin-bottom:12px;
+}
+/*
+.mceContentBody .caption,
+.caption{
+margin-top:5px;
+font-size:12px;
+}
+*/
+.mceContentBody table,
+table{
+	border-top:1px solid #CCC;
+	border-left:1px solid #CCC;
+	}
+.mceContentBody table td,
+table td{
+	font-size:14px;
+	line-height:1.5em;
+	color:#555555;
+	font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	padding:6px;
+	}
+.mceContentBody table thead td,
+table thead td{
+	background-color:#2aa1dd;
+	color:#fff;
+	}	
+
+
+
+
+
+
+blockquote{
+	border-left: solid 5px #e4e4e4;
+	padding-left:15px;
+	margin-bottom:1.0em;
+	margin-left:0px;
+}	
+
+blockquote,
+blockquote p{
+	font-family:'HelveticaNeueW01-46Ligh', Arial, Helvetica, sans-serif;
+	font-size:22px;
+	color:#2AA1DD;
+	line-height:1.5em;
+	}	
+blockquote p{
+text-indent:-5px;
+}	
+blockquote	p.attribution{
+	text-align:right;
+	font-size:12px;
+	margin-top:0px;
+	padding-left:80px;
+	font-family:'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+	}
+blockquote	p.attribution em{
+	font-family:'HelveticaNeueW01-66Medi', Arial, Helvetica, sans-serif;
+	}	
+	
+	
+	
+/* BEGIN INSET PERSPECTIVES SIDEBAR */
+blockquote.inset_sidebar_right,
+.inset_sidebar_right blockquote{
+float:right;
+width: 228px;
+border-left: solid 5px #e4e4e4;
+padding: 8px 8px 8px 4px;
+margin:5px 0px 15px 20px;
+background-color:#e4e4e4;
+}
+blockquote.inset_sidebar_left,
+.inset_sidebar_left blockquote{
+float:left;
+border-left: 0px;
+width: 228px;
+border-right: solid 5px #e4e4e4;
+padding: 8px 4px 8px 8px;
+margin:5px 20px 15px 0px;
+background-color:#e4e4e4;
+}
+blockquote.inset_sidebar_right h2,
+blockquote.inset_sidebar_right h3,
+blockquote.inset_sidebar_right h4,
+blockquote.inset_sidebar_left h2,
+blockquote.inset_sidebar_left h3,
+blockquote.inset_sidebar_left h4,
+.inset_sidebar_right blockquote h2,
+.inset_sidebar_right blockquote h3,
+.inset_sidebar_right blockquote h4,
+.inset_sidebar_left blockquote h2,
+.inset_sidebar_left blockquote h3,
+.inset_sidebar_left blockquote h4
+{
+margin: 0px 0px 8px 0px;
+padding:3px 5px 3px 5px;
+color:#FFF;
+font-size:14px;
+line-height:18px;
+background-color:#2AA1DD;
+font-family: 'HelveticaNeueW01-65Medi',Arial,Helvetica,sans-serif;
+text-transform:none;
+}
+blockquote.inset_sidebar_right p,
+blockquote.inset_sidebar_left p,
+.inset_sidebar_right blockquote p,
+.inset_sidebar_left blockquote p{
+font-size:12px;
+line-height:20px;
+font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+color:#3c3c3c;
+text-indent:0px;
+margin-bottom:1em;
+}
+.inset_sidebar_right blockquote p+ul,
+.inset_sidebar_right blockquote p+ol,
+.inset_sidebar_left blockquote p+ul,
+.inset_sidebar_left blockquote p+ol{
+margin-top:-0.5em;
+}
+.inset_sidebar_right blockquote ul,
+.inset_sidebar_left blockquote ul,
+blockquote.inset_sidebar_right ul,
+blockquote.inset_sidebar_left ul{
+margin-bottom:5px;
+}
+.inset_sidebar_right blockquote ul li,
+.inset_sidebar_left blockquote ul li{
+font-size:12px;
+line-height:20px;
+}
+
+	
+
+
+
+/* begin STYLES FOR IMAGES WITHIN RTE*/
+img.img_right,
+img.image_right_with_caption{
+margin: 8px 0px 16px 16px;
+float:right; display:inline;
+}
+img.img_left,
+img.image_left_with_caption{
+margin: 8px 16px 16px 0px;
+float:left; display:inline;
+}
+img.image_left_with_caption,
+img.image_right_with_caption{
+margin-bottom: 6px;
+}
+/* end STYLES FOR IMAGES WITHIN RTE*/
+
+
+
+.blue_runin{
+color: #2aa1dd;
+}
+
+/* table within Main Content area */
+.mceContentBody table td{
+font-size:14px;
+line-height:1.5em;
+color:#555555;
+font-family: 'HelveticaNeueW01-45Ligh',Arial,Helvetica,sans-serif;
+border:1px solid #dedede;
+padding:6px;
+}
+
+
+
+
+
+#content ul.wrapping_list{
+	list-style-type:none;
+	list-style-image: none;
+	list-style-position: inside;		
+	overflow: visible; /*  To wrap around sidebar elements, the UL needs an overflow:visible — it's the only way */
+}
+#content ul.wrapping_list ul,
+#content ul.wrapping_list ol{
+overflow: visible; /*  To wrap around sidebar elements, the UL needs an overflow:visible — it's the only way */
+}
+#content ol.wrapping_list{
+	list-style:decimal;
+	list-style-position:inside;
+	overflow:hidden;
+}
+#content ul.wrapping_list li{
+	background-image:none;
+	list-style-image: url('file:///C:/Users/johnchowdhury/Documents/BD%202013/nksoft%20july/themes/bridge/images/bullet.gif');
+	list-style-position:inside;
+}
+#content ul.wrapping_list ul li{
+/* 
+To wrap around sidebar elements, the UL needs an overflow:visible
+BUT BECAUSE ULs which have overflow:visible will ignore left margin and left padding ONLY when near the floating elements */
+text-indent: 15px;
+padding:0px 0px 0px 0px;
+}
+
+#content ul.wrapping_list ol li{
+list-style-image: none;
+list-style-type:decimal;
+text-indent: 30px; /*BECAUSE ULs which have overflow:visible will ignore left margin and left padding */
+padding:0px 0px 0px 0px;
+}

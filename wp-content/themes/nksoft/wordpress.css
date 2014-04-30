@@ -1,0 +1,155 @@
+/* 1.GLOBAL */
+
+
+/* 2.LAYOUT */
+ 
+
+/* 2 columns - sidebar-right */
+
+/* 3.HEADER */
+
+
+/* 4.NAVIGATION */
+
+/* 5.BREADCRUMBS */
+
+.breadcrumb {font-size: 0.9em; line-height: 1.3em; padding: 3px 0px 2px 0px; border-bottom: 6px solid #820000; margin-bottom: 1em;}
+.breadcrumb p { margin: 0; padding: 0; line-height: 15px; color: #565347 }
+.breadcrumb a { text-decoration: none; border-bottom: none; color: #9D9573 }
+.breadcrumb a:hover {color: #820000 }
+
+/* 6.COLUMNS */
+#content.narrowcolumn .post {padding-left: 18px;}
+#content.narrowcolumn .post h2 {background: url("images/raquo_large.gif") no-repeat left top; padding-left: 18px; margin-left: -18px;}
+#content.narrowcolumn .entry h2 {background: #fff; padding-left: 0px; margin-left: 0px;}
+#content.widecolumn {padding: 0px; margin: 0px;	width: 800px; border: 0px;}
+
+/* 7.SIDEBARS */
+
+#sidebar {float: right; margin: 0px 0px 10px -1px; padding: 0px 0px 0px 15px; font-size: 0.9em; border-left: 1px solid #eae9e6; width: 154px;}
+#sidebar h2 {font-size: 1em; line-height: 1.3em; color: #3f3c30; padding: 0px 0px 2px 0px; border-bottom: 6px solid #3f3c30; letter-spacing: 2px;}
+
+/* 9.FOOTER */
+ 
+
+/* 10.CSS SUPPORT */
+ 
+span.clear     {clear: both; display: block; font-size: 0; height: 1px; line-height: 0; margin-bottom: -1px; }
+.clear         {clear: both; }
+.clear-block   {display: block; }
+.float-left    {float: left; }
+.float-right   {float: right; }
+.text-left     {text-align: left; }
+.text-right    {text-align: right; }
+.text-center   {text-align: center; }
+.text-justify  {text-align: justify; }
+.bold          {font-weight: bold; }
+.italic        {font-style: italic; }
+.underline     {border-bottom: 1px solid; }
+.highlight     {background: #ffc; }
+.wrap          {width: 960px; margin: 0 auto; }
+.img-left      {float: left; margin: 4px 10px 4px 0; }
+.img-right     {float: right; margin: 4px 0 4px 10px; }
+.nopadding     {padding: 0 }
+.noindent      {margin-left: 0; padding-left: 0 }
+.nobullet      {list-style: none; list-style-image: none; }
+
+/* Begin Typography & Colors */
+.alt {background-color: #f6f3e5; border-top: 1px solid #eee3c1; border-bottom: 1px solid #eee3c1; }
+small {font-family: Arial, Helvetica, Sans-Serif; font-size: 0.9em; line-height: 1.5em; }
+
+.entry p a:visited {}
+.commentlist li, #commentform input, #commentform textarea {font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+.commentlist li {font-weight: bold; }
+.commentlist li .avatar {float: right; border: 1px solid #eee; padding: 2px; background: #fff; }
+.commentlist cite, .commentlist cite a {font-weight: bold; font-style: normal; font-size: 1.1em; }
+.commentlist p {font-weight: normal; line-height: 1.5em; text-transform: none; }
+/* End Typography & Colors */
+
+/* Begin Structure */
+.post hr {display: block; }
+.postmetadata {clear: both;}
+.clear {clear: both;}
+/* End Structure */
+
+/* Begin Images */
+p img {padding: 0; max-width: 100%; }
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {display: block; margin-left: auto; margin-right: auto; }
+img.alignright {padding: 4px; margin: 0 0 2px 7px; display: inline; }
+img.alignleft {padding: 4px; margin: 0 7px 2px 0; display: inline; }
+.alignright {float: right; }
+.alignleft {float: left; }
+/* End Images */
+
+/* Begin Lists */
+.postmetadata ul, .postmetadata li {display: inline; list-style-type: none; list-style-image: none; }
+#sidebar h2 {text-transform: uppercase;}
+#sidebar ul, #sidebar ul ol {margin: 0; padding: 0; }
+#sidebar ul li {list-style-type: none; list-style-image: none; margin-bottom: 15px; }
+#sidebar ul p, #sidebar ul select {margin: 5px 0 8px; }
+#sidebar ul ul, #sidebar ul ol {margin: 5px 0 0 0px; }
+#sidebar ul ul ul, #sidebar ul ol {margin: 0 0 0 0px; }
+ol li, #sidebar ul ol li {list-style: decimal outside; }
+#sidebar ul ul li, #sidebar ul ol li {background: transparent url("images/raquo.gif") no-repeat 1px .35em; list-style-image: none; list-style-type: none; margin: .15em 0 .15em .5em; padding: 0 0 .2em 1.5em;}
+/* End Entry Lists */
+
+/* Begin Form Elements */
+#searchform {margin: 0px; padding: 0px;}
+#sidebar #searchform #s {width: 80px; padding: 2px; }
+#sidebar #searchsubmit {padding: 1px 0px 1px 0px; }
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center; }
+select {width: 130px; }
+#commentform input {width: 170px; padding: 2px; margin: 5px 5px 1px 0; }
+#commentform textarea {width: 100%; padding: 2px; }
+#commentform #submit {margin: 0;}
+/* End Form Elements */
+
+/* Begin Comments*/
+.alt {margin: 0; padding: 10px; }
+.commentlist {padding: 0; margin: 0 0 2em 0; text-align: justify; }
+.commentlist li {margin: 15px 0 3px; padding: 5px 10px 3px; list-style: none; }
+.commentlist p {margin: 10px 5px 10px 0; }
+#commentform p {margin: 5px 0; }
+.nocomments {text-align: center; margin: 0; padding: 0; }
+.commentmetadata {margin: 0; display: block; }
+/* End Comments */
+
+/* Begin Calendar */
+#wp-calendar {empty-cells: show; margin: 10px auto 10px auto; width: 154px; border: 0px;}
+#wp-calendar #prev {padding: 10px 0px 0px 10px; text-align: left;}
+#wp-calendar #next {padding: 10px 10px 0px 0px; text-align: right;}
+#wp-calendar #prev a, #wp-calendar #next a {display: inline; background: #fff; border-bottom: 1px dotted #81785a; color: #565347;}
+#wp-calendar #prev a:focus, #wp-calendar #next a:focus {outline:1px #8a887d dotted;}
+#wp-calendar #prev a:hover, #wp-calendar #next a:hover {color: #820000;}
+#wp-calendar a {display: block; text-decoration: none; }
+#wp-calendar caption {font-family: Arial, Helvetica, sans-serif; text-align: center; background: #c4bfa9; font-weight: bold; padding: 5px; margin: 0px;}
+#wp-calendar th {font-style: normal; text-transform: capitalize; background: #e6e4db; border: 0px;}
+#wp-calendar td {text-align: center; background: #fff; border: 0px;}
+#wp-calendar td a {background: #e6e4db; color: #565347; border: 0px;}
+#wp-calendar td a:hover, #wp-calendar td a:active {background: #820000; color: #fff;}
+/* End Calendar */
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {cursor: help; }
+acronym, abbr {border-bottom: 1px dashed #999; }
+blockquote {margin: 15px 0px 1em 20px; padding: 0px 0px 0px 15px; border-left: 5px solid #eae9e6; width: 85%;}
+blockquote cite {margin: 5px 0 0; display: block; }
+.center {text-align: center; }
+.hidden {display: none; }
+a img {border: none;}
+/* End Various Tags & Classes*/
+
+/* Captions */
+.aligncenter, div.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+.wp-caption {border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.wp-caption img {margin: 0; padding: 0; border: 0 none;}
+.wp-caption p.wp-caption-text {font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0;}
+/* End captions */
+
+
